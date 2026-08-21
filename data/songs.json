@@ -1,0 +1,300 @@
+{
+  "青花瓷": {
+    "title": "青花瓷",
+    "artist": "周杰伦",
+    "original_key": "A",
+    "play_key": "G",
+    "capo": 2,
+    "time_sig": "4/4",
+    "strumming": "下 下下上 下 下下上",
+    "note": "原调 A，弹唱用 G 调指法 + 变调夹 2 品，即为原调音高。和弦进行参考公开吉他谱。",
+    "sections": [
+      {
+        "name": "前奏 / 间奏",
+        "lines": [
+          {"chords": ["C", "G/B", "Am7", "G", "Em", "A7", "D"], "lyric": ""}
+        ]
+      },
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["G", "Em7"], "lyric": "素胚勾勒出青花笔锋浓转淡 瓶身描绘的牡丹一如妳初妆"},
+          {"chords": ["Cadd9", "Dsus4", "D"], "lyric": "冉冉檀香透过窗心事我了然 宣纸上走笔至此搁一半"},
+          {"chords": ["G", "Bm7", "Em7"], "lyric": "釉色渲染仕女图韵味被私藏 而妳嫣然的一笑如含苞待放"},
+          {"chords": ["Cadd9", "Dsus4", "G", "Dm7", "G/B"], "lyric": "妳的美一缕飘散 去到我去不了的地方"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["C", "D/C", "Bm7", "Em7"], "lyric": "天青色等烟雨 而我在等妳 炊烟袅袅升起 隔江千万里"},
+          {"chords": ["Am7", "D", "G", "G7"], "lyric": "在瓶底书汉隶仿前朝的飘逸 就当我为遇见妳伏笔"},
+          {"chords": ["C", "D/C", "Bm7", "Em7"], "lyric": "天青色等烟雨 而我在等妳 月色被打捞起 晕开了结局"},
+          {"chords": ["Am7", "D", "G"], "lyric": "如传世的青花瓷自顾自美丽 妳眼带笑意"}
+        ]
+      },
+      {
+        "name": "尾奏",
+        "lines": [
+          {"chords": ["C", "G/B", "Am7", "G", "Em", "A7", "D", "G"], "lyric": ""}
+        ]
+      }
+    ]
+  },
+  "月亮代表我的心": {
+    "title": "月亮代表我的心",
+    "artist": "邓丽君",
+    "original_key": "C",
+    "play_key": "C",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "经典入门曲目，C 大调。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "Am", "Dm", "G7"], "lyric": "你问我爱你有多深 我爱你有几分"},
+          {"chords": ["C", "Am", "Dm", "G7"], "lyric": "我的情也真 我的爱也真 月亮代表我的心"},
+          {"chords": ["C", "G", "Am", "Em"], "lyric": "轻轻的一个吻 已经打动我的心"},
+          {"chords": ["F", "C", "G", "C"], "lyric": "深深的一段情 教我思念到如今"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["C", "Am", "F", "G"], "lyric": "问问世界上 什么是永恒 有什么比爱更动人"},
+          {"chords": ["C", "Am", "Dm", "G7", "C"], "lyric": "月亮代表我的心 轻轻告诉你 我的爱不变"}
+        ]
+      }
+    ]
+  },
+  "童年": {
+    "title": "童年",
+    "artist": "罗大佑",
+    "original_key": "G",
+    "play_key": "G",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "校园民谣经典，G 大调。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["G", "Em", "C", "G"], "lyric": "池塘边的榕树上 知了在声声叫着夏天"},
+          {"chords": ["G", "Em", "C", "D"], "lyric": "操场边的秋千上 只有蝴蝶停在上面"},
+          {"chords": ["G", "Em", "C", "G"], "lyric": "黑板上老师的粉笔 还在拼命叽叽喳喳写个不停"},
+          {"chords": ["G", "Em", "C", "D", "G"], "lyric": "等待着下课 等待着放学 等待游戏的童年"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["C", "G", "Am", "Em"], "lyric": "总是要等到睡觉前 才知道功课只做了一点点"},
+          {"chords": ["F", "C", "D", "G"], "lyric": "总是要等到考试后 才知道该念的书都没有念"}
+        ]
+      }
+    ]
+  },
+  "小星星": {
+    "title": "小星星",
+    "artist": "传统儿歌",
+    "original_key": "C",
+    "play_key": "C",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "入门练习曲，C 大调，适合新手与测试。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "C", "G", "G"], "lyric": "一闪一闪亮晶晶 满天都是小星星"},
+          {"chords": ["A", "A", "G"], "lyric": "挂在天上放光明"},
+          {"chords": ["F", "F", "E", "E"], "lyric": "好像许多小眼睛"},
+          {"chords": ["D", "D", "C"], "lyric": "一闪一闪亮晶晶"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["G", "G", "F", "F"], "lyric": "满天都是小星星 亮晶晶"},
+          {"chords": ["E", "E", "D", "D"], "lyric": "好像许多小眼睛"},
+          {"chords": ["C", "C", "G", "G", "C"], "lyric": "一闪一闪亮晶晶 小星星"}
+        ]
+      }
+    ]
+  },
+  "平凡之路": {
+    "title": "平凡之路",
+    "artist": "朴树",
+    "original_key": "E",
+    "play_key": "Em",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "原调 E 小调，弹唱用 Em 指法。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["Em", "D", "Em", "D"], "lyric": "徘徊着的 在路上的 你要走吗 易碎的"},
+          {"chords": ["C", "G", "D", "Em"], "lyric": "骄傲着 那也曾是我的模样 沸腾着的"},
+          {"chords": ["C", "G", "D", "Em"], "lyric": "不安着的 你要去哪 谜一样的 沉默着"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["Em", "D", "C", "G"], "lyric": "我曾经跨过山和大海 也穿过人山人海"},
+          {"chords": ["Am", "Em", "D", "C"], "lyric": "我曾经拥有着的一切 转眼都飘散如烟"},
+          {"chords": ["Em", "D", "C", "G"], "lyric": "我曾经失落失望失掉所有方向 直到看见平凡才是"},
+          {"chords": ["Am", "Em", "D", "G"], "lyric": "唯一的答案"}
+        ]
+      }
+    ]
+  },
+  "稻香": {
+    "title": "稻香",
+    "artist": "周杰伦",
+    "original_key": "C",
+    "play_key": "C",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "C 大调，温暖的民谣小品。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "G", "Am", "Em"], "lyric": "对这个世界如果你有太多的抱怨 跌倒了就不敢继续往前走"},
+          {"chords": ["F", "C", "F", "G"], "lyric": "为什么人要这么的脆弱 堕落 请你打开电视看看"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["F", "G", "C", "Am"], "lyric": "不要这么容易就想放弃 就像我说的 追不到的梦想"},
+          {"chords": ["F", "G", "C"], "lyric": "换个梦不就得了 为自己的人生鲜艳上色"}
+        ]
+      }
+    ]
+  },
+  "成都": {
+    "title": "成都",
+    "artist": "赵雷",
+    "original_key": "C",
+    "play_key": "C",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "C 大调，民谣弹唱经典。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "G", "Am", "Em"], "lyric": "余路还要走多久 你攥着我的手"},
+          {"chords": ["F", "C", "Dm", "G"], "lyric": "让我感到为难的 是挣扎的自由"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["C", "Em", "F", "G"], "lyric": "和我在成都的街头走一走 喔哦"},
+          {"chords": ["C", "Em", "F", "G"], "lyric": "直到所有的灯都熄灭了也不停留"}
+        ]
+      }
+    ]
+  },
+  "后来": {
+    "title": "后来",
+    "artist": "刘若英",
+    "original_key": "C",
+    "play_key": "C",
+    "capo": 0,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "C 大调，青春回忆系情歌。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "Em", "Am", "F"], "lyric": "后来 我总算学会了 如何去爱"},
+          {"chords": ["C", "Em", "F", "G"], "lyric": "可惜你 早已远去 消失在人海"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["C", "Em", "Am", "F"], "lyric": "后来 我终于在眼泪中明白"},
+          {"chords": ["G", "C"], "lyric": "有些人 一旦错过就不在"}
+        ]
+      }
+    ]
+  },
+  "晴天": {
+    "title": "晴天",
+    "artist": "周杰伦",
+    "original_key": "D",
+    "play_key": "C",
+    "capo": 2,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "原调 D，弹唱用 C 调指法 + 变调夹 2 品。",
+    "sections": [
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "Em", "D", "Bm7"], "lyric": "故事的小黄花 从出生那年就飘着 童年的荡秋千"},
+          {"chords": ["Em", "C", "D", "G"], "lyric": "随记忆一直晃到现在 吹着前奏 望着天空"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["Em", "D", "C", "G"], "lyric": "刮风这天 我试过握着你手 但偏偏 雨渐渐"},
+          {"chords": ["Em", "D", "C"], "lyric": "大到我看你不见 还要多久 我才能在你身边"}
+        ]
+      }
+    ]
+  },
+  "Best of My Love": {
+    "title": "Best of My Love",
+    "artist": "安田レイ (Yasuda Rei)",
+    "original_key": "Db",
+    "play_key": "C",
+    "capo": 1,
+    "time_sig": "4/4",
+    "strumming": "下 下上 上下 上",
+    "note": "安田レイ 2013 年出道单曲（作曲 玉井健二/楠野功太郎）。此为风格化代表编配（Db 原调，用 C 指法 + 变调夹 1 品即原调音高），并非官方原版谱；如需精确和弦，请用「音频转谱」上传歌曲本地识别。",
+    "sections": [
+      {
+        "name": "前奏",
+        "lines": [
+          {"chords": ["C", "Am", "F", "G"], "lyric": ""}
+        ]
+      },
+      {
+        "name": "主歌",
+        "lines": [
+          {"chords": ["C", "Am", "F", "G"], "lyric": "何度 生まれ変わっても 君とまた巡り逢いたい"},
+          {"chords": ["C", "Am", "Dm", "G"], "lyric": "こんな気持ちを ありがとう いつまでも忘れない"}
+        ]
+      },
+      {
+        "name": "副歌",
+        "lines": [
+          {"chords": ["F", "G", "Em", "Am"], "lyric": "best of my love 永远に 君だけの"},
+          {"chords": ["F", "G", "C"], "lyric": "best of my love 忘れない 我的最爱"}
+        ]
+      },
+      {
+        "name": "尾奏",
+        "lines": [
+          {"chords": ["C", "Am", "F", "G", "C"], "lyric": ""}
+        ]
+      }
+    ]
+  }
+}

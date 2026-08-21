@@ -1,0 +1,91 @@
+:root{
+  --bg:#0f1216; --panel:#171c22; --panel2:#1e252d; --line:#2a323c;
+  --txt:#e8edf2; --sub:#9bb0c3; --accent:#ffb454; --accent2:#4fd1c5; --danger:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,sans-serif;
+  background:radial-gradient(1200px 600px at 70% -10%,#1b2530,var(--bg));color:var(--txt);min-height:100vh}
+header{padding:22px 20px 10px;text-align:center}
+header h1{margin:0;font-size:24px;letter-spacing:1px}
+header h1 .a{color:var(--accent)}
+header p{margin:6px 0 0;color:var(--sub);font-size:13px}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px 60px}
+.tabs{display:flex;gap:8px;justify-content:center;margin:18px 0}
+.tab{padding:9px 18px;border:1px solid var(--line);background:var(--panel);color:var(--sub);
+  border-radius:999px;cursor:pointer;font-size:14px;transition:.15s}
+.tab.active{background:linear-gradient(90deg,var(--accent),#ff9f43);color:#1a1205;border-color:transparent;font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+label{font-size:13px;color:var(--sub);margin-right:4px}
+select,input[type=text],input[type=number],input[type=file]{background:var(--panel2);border:1px solid var(--line);
+  color:var(--txt);border-radius:8px;padding:8px 10px;font-size:14px;outline:none}
+input[type=file]{font-size:13px;color:var(--sub);max-width:100%}
+button.go{background:linear-gradient(90deg,var(--accent2),#38b2ac);color:#06231f;border:none;
+  padding:9px 20px;border-radius:8px;font-weight:600;cursor:pointer;font-size:14px}
+button.go:disabled{opacity:.5;cursor:not-allowed}
+.hint{color:var(--sub);font-size:12px;margin-top:8px;line-height:1.6}
+.hint code{background:var(--panel2);padding:1px 5px;border-radius:4px;color:var(--accent2)}
+.loading{color:var(--accent);font-size:14px;padding:10px 0}
+.err{color:var(--danger);font-size:14px;padding:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-top:8px}
+.sec-title{margin:18px 0 6px;color:var(--accent2);font-size:15px;border-left:3px solid var(--accent2);padding-left:8px}
+.prog{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chip{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:14px}
+.chip b{color:var(--accent)}
+.meta{display:flex;flex-wrap:wrap;gap:14px;color:var(--sub);font-size:13px;margin:6px 0 12px}
+.meta b{color:var(--txt)}
+.line{margin:10px 0;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.chords{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:6px}
+.chords span{font-weight:700;color:var(--accent);font-size:14px;min-width:30px}
+.lyric{color:var(--txt);font-size:14px;letter-spacing:1px}
+.tab{background:#0b0e12;border:1px solid var(--line);border-radius:10px;padding:12px;overflow:auto;
+  font-family:"SFMono-Regular",Consolas,Menlo,monospace;font-size:13px;line-height:1.35;color:#cfe3ff;white-space:pre}
+.rangewrap{display:flex;align-items:center;gap:8px}
+/* 和弦图 SVG */
+.chord-svg{background:var(--panel2);border:1px solid var(--line);border-radius:10px}
+.chord-name{fill:var(--accent);font-size:14px;font-weight:700}
+.cd-line{stroke:var(--line);stroke-width:1.5}
+.cd-dot{fill:var(--accent)}
+.cd-open{fill:none;stroke:var(--accent2);stroke-width:2}
+.cd-x{fill:var(--sub);font-size:14px;font-weight:700}
+.cd-fret{fill:var(--sub);font-size:11px}
+/* 钢琴 */
+.piano-svg{background:var(--panel2);border:1px solid var(--line);border-radius:10px;max-width:100%}
+.pk-white{fill:#f4f7fa;stroke:#26303a}
+.pk-white-on{fill:var(--accent);stroke:#26303a}
+.pk-black{fill:#1a2128;stroke:#000}
+.pk-black-on{fill:var(--accent2);stroke:#000}
+.pk-label{fill:var(--sub);font-size:9px}
+/* 简谱 */
+.jianpu{background:#0b0e12;border:1px solid var(--line);border-radius:10px;padding:12px}
+.jp-row{display:flex;gap:10px;align-items:baseline;margin:4px 0;flex-wrap:wrap}
+.jp-cap{color:var(--accent2);font-size:13px;min-width:42px}
+.jp-row b{font-size:18px;letter-spacing:4px;color:var(--accent)}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--accent2);font-size:13px}
+.piano-wrap{overflow-x:auto;padding-bottom:6px}
+/* 高精度开关 */
+.hp{display:flex;align-items:center;gap:6px;color:var(--sub);font-size:13px;cursor:pointer}
+.hp input{width:16px;height:16px;accent-color:var(--accent2)}
+/* 导出栏 */
+.exportbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:6px 0 14px;padding:8px 10px;background:var(--panel2);border:1px solid var(--line);border-radius:10px}
+.eb-label{font-size:13px;color:var(--sub)}
+.eb-btn{background:var(--panel);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px}
+.eb-btn:hover{border-color:var(--accent2)}
+.eb-btn:disabled{opacity:.6;cursor:not-allowed}
+/* 笛子指法图 */
+.flute-svg{background:var(--panel2);border:1px solid var(--line);border-radius:10px}
+.fl-body{fill:#caa472;stroke:#3a2f22}
+.fl-hole-closed{fill:#2a2018;stroke:#000}
+.fl-hole-open{fill:#f4f7fa;stroke:#2a2018;stroke-width:2}
+.fl-memb{fill:#7a5a36;stroke:#2a2018}
+.fl-cap,.fl-name{fill:var(--sub);font-size:10px}
+.fing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:10px;margin-top:8px}
+/* 五线谱 */
+.staff-wrap{overflow-x:auto}
+.staff-svg{background:#0b0e12;border:1px solid var(--line);border-radius:10px;max-width:100%}
+.st-line{stroke:var(--line);stroke-width:1}
+.st-clef{fill:var(--accent);font-size:52px}
+.st-note{fill:var(--accent)}
+.st-stem{stroke:var(--accent);stroke-width:1.6}
+.st-lbl{fill:var(--sub);font-size:10px}

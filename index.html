@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>音乐转乐器谱 · 免费静态版</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>🎵 音乐转乐器<span class="a">谱</span></h1>
+  <p>从电脑上传歌曲 → 浏览器本地转谱（不上传服务器）· 支持 吉他 / 尤克里里 / 钢琴 / 笛子</p>
+</header>
+
+<div class="wrap">
+  <div class="tabs">
+    <div class="tab active" data-mode="audio" onclick="switchMode('audio')">🎧 音频转谱</div>
+    <div class="tab" data-mode="song" onclick="switchMode('song')">📜 歌名词库</div>
+  </div>
+
+  <!-- 音频转谱 -->
+  <div id="panel-audio" class="card">
+    <div class="row">
+      <label>① 选择歌曲文件</label>
+      <input type="file" id="audioFile" accept="audio/*">
+    </div>
+    <div class="row" style="margin-top:12px">
+      <label>② 乐器</label>
+      <select id="audioInstrument">
+        <option value="guitar">吉他</option>
+        <option value="ukulele">尤克里里</option>
+        <option value="piano">钢琴</option>
+        <option value="flute">笛子 / 长笛</option>
+      </select>
+      <button class="go" id="audioBtn" onclick="doTranscribe()">开始转谱</button>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <label class="hp"><input type="checkbox" id="hpMode"> 高精度模式（实验：联网加载 Basic Pitch 模型，建议桌面端；不支持时自动用离线算法）</label>
+    </div>
+    <div class="hint">支持 mp3 / wav / m4a 等。建议上传 30–90 秒清唱或伴奏片段。<b>所有分析在你浏览器本地完成，音频不会上传任何服务器。</b> 想从任意歌曲翻译？直接选你电脑里的音频即可。</div>
+    <div id="audioResult"></div>
+  </div>
+
+  <!-- 歌名词库 -->
+  <div id="panel-song" class="card" style="display:none">
+    <div class="row">
+      <label>歌名</label>
+      <input type="text" id="songName" list="songList" placeholder="如：青花瓷" style="min-width:200px">
+      <datalist id="songList"></datalist>
+      <label>乐器</label>
+      <select id="songInstrument">
+        <option value="guitar">吉他</option>
+        <option value="ukulele">尤克里里</option>
+        <option value="piano">钢琴</option>
+        <option value="flute">笛子 / 长笛</option>
+      </select>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <div class="rangewrap">
+        <label>移调</label>
+        <input type="range" id="transpose" min="-6" max="6" value="0" oninput="document.getElementById('transVal').textContent=this.value">
+        <span id="transVal">0</span> 半音
+      </div>
+      <div class="rangewrap" style="margin-left:14px">
+        <label>变调夹</label>
+        <input type="number" id="capo" min="0" max="12" value="-1" style="width:64px">
+        <span class="hint" style="margin:0">品（-1=原谱）</span>
+      </div>
+      <button class="go" onclick="doSong()">取谱</button>
+    </div>
+    <div class="hint">内置示例：《青花瓷》《月亮代表我的心》《童年》。未收录的歌请用「音频转谱」，或在 <code>data/songs.json</code> 补充。</div>
+    <div id="songResult"></div>
+  </div>
+
+  <details>
+    <summary>关于本工具 / 部署到 GitHub</summary>
+    <div class="hint">
+    • 音频转谱：浏览器内用 Web Audio 解码 + 自相关音高(YIN) + FFT 色度匹配，<b>完全离线免费</b>；已加离线精度增强（八度连续校正 + 和弦精炼）。<br>
+    • 支持多乐器：吉他/尤克里里（和弦图+六线谱）、钢琴（键盘图 <b>+ 高音五线谱</b>）、笛子（简谱+唱名 <b>+ 指法图</b>）。<br>
+    • 从任意歌曲翻译：在「音频转谱」选你电脑里的音频，本地离线转谱，无需上传。<br>
+    • 导出谱面：生成结果后点「🖼 PNG / 📄 PDF」一键导出（首次需联网加载截图库）。<br>
+    • 想更高精度？在「音频转谱」勾选「高精度模式」，或在 <code>js/transcribe.js</code> 接入 Basic Pitch(TF.js)，详见 README「高精度模式接入」。<br>
+    • 部署到 GitHub Pages：把本仓库推送到 GitHub，在仓库 Settings → Pages 选择 <code>main</code> 分支根目录即可，个人免费无限流量。
+    </div>
+  </details>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
